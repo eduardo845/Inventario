@@ -1,64 +1,63 @@
-/*
- =========================================================
- * White Dashboard - v1.0.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/white-dashboard
- * Copyright 2018 Creative Tim (http://www.creative-tim.com) & UPDIVISION (https://updivision.com)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-/*     brand Colors              */
-
-/* navbar color */
-
 :root {
-  --blue: #5e72e4;
-  --indigo: #5603ad;
-  --purple: #8965e0;
-  --pink: #f3a4b5;
-  --red: #f5365c;
-  --orange: #fb6340;
-  --yellow: #ffd600;
-  --green: #2dce89;
-  --teal: #11cdef;
-  --cyan: #2bffc6;
-  --white: #ffffff;
-  --gray: #6c757d;
-  --gray-dark: #32325d;
-  --light: #ced4da;
-  --lighter: #e9ecef;
-  --primary: #004578;
-  --secondary: #f4f5f7;
-  --success: #00f2c3;
-  --info: #1d8cf8;
-  --warning: #ff8d72;
-  --danger: #fd5d93;
-  --light: #adb5bd;
-  --dark: #212529;
-  --default: #344675;
-  --white: #ffffff;
-  --neutral: #ffffff;
-  --darker: black;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+    --insa:#FF1F00;
+    --blue: #5e72e4;
+    --indigo: #5603ad;
+    --purple: #8965e0;
+    --pink: #f3a4b5;
+    --red: #f5365c;
+    --orange: #fb6340;
+    --yellow: #ffd600;
+    --green: #2dce89;
+    --teal: #11cdef;
+    --cyan: #2bffc6;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #32325d;
+    --light: #ced4da;
+    --lighter: #e9ecef;
+    --primary: #4554c2;
+    --secondary: #f4f5f7;
+    --success: #00f2c3;
+    --info: #1d8cf8;
+    --warning: #ff8d72;
+    --danger: #fd5d93;
+    --light: #adb5bd;
+    --dark: #212529;
+    --default: #344675;
+    --white: #ffffff;
+    --neutral: #ffffff;
+    --darker: black;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+body{
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color:var(--white);
+    background:#FFFFFF;
 }
+    
+
+
 
 html {
   font-family: sans-serif;
@@ -86,17 +85,6 @@ section {
   display: block;
 }
 
-body {
-  
-  margin: 0;
-  font-family: "Public Sans", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #525f7f;
-  text-align: left;
-  background-color: #ffffff;
-}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -108,7 +96,7 @@ hr {
   overflow: visible;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -116,21 +104,25 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-size:60%;
+  width: 50%;
+  margin: auto;
 }
+
 
 #pantalla-dividida{
   display:flex;
 }
 
 .left{
-  background: #ffffff;
+  background: #f4f5f7;
   height: 100%;
   width: 50%;
 
 }
 
 .right{
-  background: #ffffff;
+  background: #f4f5f7;
   height: 100%;
   width: 50%;
   background-position: center;
@@ -143,29 +135,13 @@ h6 {
   display:flex;
 }
 .top-left{
- 
-  height: 50%;
+  background: #ffffff;
+  height: 30%;
   width: 50%;
   margin-top: 0;
-  margin-left:10px;
-  margin-right: 500px;
-  
-}
-.btn-salir{
-  background-color: #004578;
-  color: #FFFFFF;
-  margin-left: 70px;
-  border-radius: 10px;
-  padding: 8px 45px;
-  font-size: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 10px 60px;
-  cursor:pointer;
-  transition: box-shadow 0.2s ease-in-out;
-  position:relative;
 }
 .top-right{
- 
+  background: #ffffff;
   height: 30%;
   width: 50%;
   margin-top: 0;
@@ -176,34 +152,27 @@ h6 {
   width: 50%;
   margin-top: 0;
 }
-
+.container1{
+  height: 50%;
+  width:1700px;
+  background-color: #ffffff;
+}
 table,th,td{
-  margin-top:30px;
   border: 1px solid black;
   border-collapse: collapse;
-
-  padding: 10px;
-}
-table{
-width: 100%;
-
 }
 
-th{
-  background-color: #004578;
-  color: #ffffff;
+h1{
+  color:#ffffff;
+  font-size:300%;
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  line-height: 30px;
+  margin-right: auto;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-}
-td{
-  text-align: center;
-}
-
-.portada, .relleno{
-  width:500px;
-  
-  height: 500px;
-  background-color: #004578;
-  background: #ced4da;
+  margin-top: 100px;
 }
 p {
   margin-top: 0;
@@ -214,11 +183,9 @@ img{
   width: 500px;
   height: auto;
   margin-top: 0px;
-  margin-bottom: 80px;
   margin-left: 0px;
   display: block;
   position: relative;
-  
 }
 
 .usg,span{
@@ -230,7 +197,7 @@ img{
   margin-right: auto;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 .kardex, .registro, .salida, .ajuste, .inventario, .sal-usg, .reporte{
@@ -249,10 +216,8 @@ img{
   box-shadow: 0 0 10px 0 #000000 inset ;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
+
+
 
 abbr[title],
 abbr[data-original-title] {
@@ -325,7 +290,7 @@ sup {
 }
 
 a {
-  color: #004578;
+  color: #4554c2;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -2513,8 +2478,8 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #ffffff;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -2532,9 +2497,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #212529;
-  background-color: #f4f5f7;
-  border-color: #f4f5f7;
+  color: #FF1F00;
+  background-color: #FF1F00;
+  border-color: #FF1F00;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -2961,16 +2926,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #004578;
+  color: #4554c2;
   background-color: transparent;
   background-image: none;
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .btn-outline-primary:hover {
   color: #ffffff;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .btn-outline-primary:focus,
@@ -2980,7 +2945,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #004578;
+  color: #4554c2;
   background-color: transparent;
 }
 
@@ -2988,8 +2953,8 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary.dropdown-toggle {
   color: #ffffff;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
@@ -3418,7 +3383,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #004578;
+  color: #4554c2;
   background-color: transparent;
 }
 
@@ -3689,12 +3654,12 @@ input[type="button"].btn-block {
 .dropdown-item:active {
   color: #ffffff;
   text-decoration: none;
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .dropdown-item.disabled,
 .dropdown-item:disabled {
-  color: #6c757d;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -4043,7 +4008,7 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked~.custom-control-label::before {
   color: #ffffff;
-  background-color: #004578;
+  background-color: #4554c2;
   box-shadow: none;
 }
 
@@ -4053,7 +4018,7 @@ input[type="button"].btn-block {
 
 .custom-control-input:active~.custom-control-label::before {
   color: #ffffff;
-  background-color: #004578;
+  background-color: #4554c2;
   box-shadow: none;
 }
 
@@ -4102,7 +4067,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
@@ -4110,7 +4075,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-  background-color: #004578;
+  background-color: #4554c2;
   box-shadow: none;
 }
 
@@ -4131,7 +4096,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
@@ -4297,7 +4262,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #004578;
+  background-color: #4554c2;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(34, 42, 66, 0.1);
@@ -4329,7 +4294,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #004578;
+  background-color: #4554c2;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(34, 42, 66, 0.1);
@@ -4364,7 +4329,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
-  background-color: #004578;
+  background-color: #4554c2;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(34, 42, 66, 0.1);
@@ -4485,7 +4450,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #ffffff;
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .nav-fill .nav-item {
@@ -5211,8 +5176,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #ffffff;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .page-item.disabled .page-link {
@@ -5284,7 +5249,7 @@ input[type="button"].btn-block {
 
 .badge-primary {
   color: #ffffff;
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .badge-primary[href]:hover,
@@ -5474,7 +5439,7 @@ input[type="button"].btn-block {
 }
 
 .alert-primary {
-  color: #004578;
+  color: #4554c2;
   background-color: #e66ad2;
   border-color: #e66ad2;
 }
@@ -5667,7 +5632,7 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
-  background-color: #004578;
+  background-color: #4554c2;
   transition: width 0.6s ease;
 }
 
@@ -5755,8 +5720,8 @@ input[type="button"].btn-block {
 .list-group-item.active {
   z-index: 2;
   color: #ffffff;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .list-group-flush .list-group-item {
@@ -6738,7 +6703,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #004578 !important;
+  background-color: #4554c2 !important;
 }
 
 a.bg-primary:hover,
@@ -6918,7 +6883,7 @@ button.bg-darker:focus {
 }
 
 .border-primary {
-  border-color: #004578 !important;
+  border-color: #4554c2 !important;
 }
 
 .border-secondary {
@@ -10204,7 +10169,7 @@ button.bg-darker:focus {
 }
 
 .text-primary {
-  color: #004578 !important;
+  color: #4554c2 !important;
 }
 
 a.text-primary:hover,
@@ -10829,14 +10794,14 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 }
 
 .btn-primary {
-  background: #004578;
-  background-image: -webkit-linear-gradient(to bottom left, #004578, #2d0ccc, #004578);
-  background-image: -o-linear-gradient(to bottom left, #004578, #2d0ccc, #004578);
-  background-image: -moz-linear-gradient(to bottom left, #004578, #2d0ccc, #004578);
-  background-image: linear-gradient(to bottom left, #004578, #2d0ccc, #004578);
+  background: #4554c2;
+  background-image: -webkit-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2);
+  background-image: -o-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2);
+  background-image: -moz-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2);
+  background-image: linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2);
   background-size: 210% 210%;
   background-position: top right;
-  background-color: #004578;
+  background-color: #4554c2;
   transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
@@ -10856,10 +10821,10 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .btn-primary.active:focus,
 .btn-primary.active:hover {
   background-color: #2d0ccc !important;
-  background-image: linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -webkit-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -o-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -moz-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
+  background-image: linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -webkit-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -o-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -moz-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
   color: #ffffff;
   box-shadow: none;
 }
@@ -10900,13 +10865,13 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
 }
 
 .btn-primary.btn-simple {
-  color: #004578;
-  border-color: #004578;
+  color: #4554c2;
+  border-color: #4554c2;
   background: transparent;
 }
 
@@ -10914,8 +10879,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary.btn-simple:focus,
 .btn-primary.btn-simple:active,
 .btn-primary.btn-simple:not(:disabled):not(.disabled):active {
-  color: #004578;
-  border-color: #004578;
+  color: #4554c2;
+  border-color: #4554c2;
   background-color: transparent !important;
   background-image: none !important;
   box-shadow: none;
@@ -10924,7 +10889,7 @@ fieldset[disabled] .btn-primary.active {
 
 
 .btn-primary.btn-simple.active {
-  border-color: #004578 !important;
+  border-color: #4554c2 !important;
 }
 
 .btn-primary.btn-simple.active:hover,
@@ -10932,17 +10897,17 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary.btn-simple.active:active,
 .btn-primary.btn-simple.active:not(:disabled):not(.disabled):active {
   color: #ffffff;
-  border-color: #004578;
-  background-image: linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -webkit-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -o-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
-  background-image: -moz-linear-gradient(to bottom left, #004578, #2d0ccc, #004578) !important;
+  border-color: #4554c2;
+  background-image: linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -webkit-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -o-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
+  background-image: -moz-linear-gradient(to bottom left, #4554c2, #2d0ccc, #4554c2) !important;
   background-color: #2d0ccc !important;
   box-shadow: none;
 }
 
 .btn-primary.btn-link {
-  color: #004578;
+  color: #4554c2;
 }
 
 .btn-primary.btn-link:hover,
@@ -11470,7 +11435,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
   transition: all 0.15s ease;
   box-shadow: none;
-  color: #004578;
+  color: #4554c2;
 }
 
 .btn-neutral.animation-on-hover:hover {
@@ -12446,7 +12411,7 @@ fieldset[disabled] .btn-link.active {
 }
 
 .form-control:focus {
-  border-color: #004578;
+  border-color: #4554c2;
   background-color: transparent;
   box-shadow: none;
 }
@@ -12455,7 +12420,7 @@ fieldset[disabled] .btn-link.active {
 .form-control:focus~.input-group-append .input-group-text,
 .form-control:focus+.input-group-prepend .input-group-text,
 .form-control:focus~.input-group-prepend .input-group-text {
-  border: 1px solid #004578;
+  border: 1px solid #4554c2;
   border-left: none;
   background-color: transparent;
 }
@@ -12778,7 +12743,7 @@ img {
 }
 
 .modal.modal-primary .modal-content {
-  background-color: #004578;
+  background-color: #4554c2;
   color: #ffffff;
 }
 
@@ -13555,7 +13520,7 @@ img {
 }
 
 .navbar.navbar-transparent {
-  background: white !important;
+  background: transparent !important;
 }
 
 .navbar.bg-white .navbar-nav .search-bar.input-group i {
@@ -13593,7 +13558,7 @@ img {
 }
 
 .navbar.bg-primary {
-  background-color: #004578 !important;
+  background-color: #4554c2 !important;
 }
 
 .navbar.bg-warning {
@@ -14152,7 +14117,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #004578;
+  color: #4554c2;
 }
 
 h1,
@@ -14266,12 +14231,12 @@ p.description {
 }
 
 .blockquote.blockquote-primary {
-  border-color: #004578;
-  color: #004578;
+  border-color: #4554c2;
+  color: #4554c2;
 }
 
 .blockquote.blockquote-primary small {
-  color: #004578;
+  color: #4554c2;
 }
 
 .blockquote.blockquote-danger {
@@ -14332,7 +14297,7 @@ hr {
 }
 
 .table>tbody>tr.table-primary>td {
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .table>tbody>tr.table-warning>td {
@@ -14541,7 +14506,7 @@ table.tablesorter thead tr .headerSortDown {
 .form-check input[type="checkbox"]:checked+.form-check-sign::before,
 .form-check input[type="checkbox"]:checked+.form-check-sign::before {
   border: none;
-  background-color: #004578;
+  background-color: #4554c2;
 }
 
 .form-check .form-check-sign::after {
@@ -14624,15 +14589,15 @@ table.tablesorter thead tr .headerSortDown {
 .form-check-radio input[type="radio"]:checked+.form-check-sign::after {
   width: 6px;
   height: 6px;
-  background-color: #004578;
-  border-color: #004578;
+  background-color: #4554c2;
+  border-color: #4554c2;
   top: 9px;
   left: 6px;
   opacity: 1;
 }
 
 .form-check-radio input[type="radio"]:checked+.form-check-sign::before {
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .form-check-radio input[type="radio"]:checked+.form-check-sign::after {
@@ -15446,7 +15411,7 @@ table.tablesorter thead tr .headerSortDown {
   float: right;
   width: 100%;
   min-height: 100vh;
-  border-top: 2px solid #004578;
+  border-top: 2px solid #4554c2;
   background: linear-gradient(#1e1e2f, #1e1e24);
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -15464,7 +15429,7 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 .main-panel[data="primary"] {
-  border-top: 2px solid #004578;
+  border-top: 2px solid #4554c2;
 }
 
 .main-panel>.content {
@@ -15569,7 +15534,7 @@ table.tablesorter thead tr .headerSortDown {
     opacity: 0;
   }
   .sidebar-mini .main-panel>.content {
-    padding-left: 0px;
+    padding-left: 130px;
   }
   .sidebar-mini footer {
     padding-left: 130px;
@@ -15963,12 +15928,12 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .bd-docs table .datepicker thead th,
 .bd-docs table .datepicker table thead th,
 .bd-docs table .datepicker .tim-icons {
-  color: #004578;
+  color: #4554c2;
 }
 
 .bd-docs .bd-example .picker-switch .tim-icons,
 .bd-docs table .picker-switch .tim-icons {
-  color: #004578;
+  color: #4554c2;
 }
 
 .bd-docs .footer .container-fluid>nav {
@@ -16461,9 +16426,9 @@ code {
 .input-group-focus .input-group-prepend .input-group-text,
 .input-group-focus .input-group-append .input-group-text {
   background-color: #ffffff;
-  border-color: #004578;
+  border-color: #4554c2;
   background-color: transparent;
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .input-group-focus.no-border .input-group-prepend .input-group-text,
@@ -17012,7 +16977,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .white-content {
-  background: #f5f6fa;
+  background: #ffffff;
 }
 
 .white-content .navbar.navbar-transparent .navbar-brand {
@@ -17124,7 +17089,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .white-content .form-control:focus {
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .white-content .form-group.no-border .form-control,
@@ -17195,7 +17160,7 @@ Copyright (c) 2015 Daniel Eden
 .white-content .input-group-focus .input-group-prepend .input-group-text,
 .white-content .input-group-focus .input-group-append .input-group-text,
 .white-content .input-group-focus .form-control {
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .white-content .input-group-focus.no-border .input-group-prepend .input-group-text,
@@ -17496,7 +17461,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .card.card-white .form-control:focus {
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .card.card-white label:not(.btn) {
@@ -17572,7 +17537,7 @@ Copyright (c) 2015 Daniel Eden
 .card.card-white .input-group-focus .input-group-append .input-group-text,
 .card.card-white .input-group-focus .form-control {
   background-color: #ffffff;
-  border-color: #004578;
+  border-color: #4554c2;
 }
 
 .card.card-white .input-group-focus.no-border .input-group-prepend .input-group-text,
@@ -17908,7 +17873,6 @@ Copyright (c) 2015 Daniel Eden
 .login-page .card-login {
     border-radius: 0.4285rem;
     padding-bottom: 0.7rem;
-    width: 300px;
 }
 
 .login-page .card-login.card-white .card-header .card-title {
@@ -18012,7 +17976,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .icon.icon-primary {
-  color: #004578;
+  color: #4554c2;
 }
 
 .icon.icon-info {
@@ -18024,7 +17988,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .white-content .full-page {
-  background: #ffffff;
+  background: #f5f6fa;
 }
 
 .white-content .full-page h1,

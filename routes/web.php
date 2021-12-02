@@ -18,6 +18,17 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
 
+Route::get('menu',function(){
+    return view('auth.menu');
+});
+Route::get('portada',function(){
+    return view('auth.portada');
+});
+
+Route::get('kardex',function(){
+    return view('auth.kardex');
+});
+
 Route::group(['middleware' => 'auth'], function () {
 
     Route::resources([
