@@ -130,6 +130,7 @@ h6 {
 }
 
 .right{
+  display:flex;
   background: #ffffff;
   height: 100%;
   width: 50%;
@@ -138,7 +139,24 @@ h6 {
   text-align: center;
   margin-left: 20px;
 }
-
+.right1{
+  background: #ffffff;
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-left: 20px;
+}
+.right2{
+  background: #ffffff;
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-left: 20px;
+}
 .top{
   display:flex;
 }
@@ -233,11 +251,49 @@ img{
   margin-top: 0px;
 }
 
-.kardex, .registro, .salida, .ajuste, .inventario, .sal-usg, .reporte{
+.registro, .salida,    .reporte{
   background-color: #FF1F00;
   color:#FFFFFF;
   border-radius: 10px;
-  padding: 8px 45px;
+  padding: 1px 20px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 60px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+  
+}
+.kardex,  .inventario{
+  background-color: #FF1F00;
+  color:#FFFFFF;
+  border-radius: 10px;
+  padding: 12px 35px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 60px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+}
+.ajuste{
+  background-color: #FF1F00;
+  color:#FFFFFF;
+  border-radius: 10px;
+  padding: 1px 26px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 60px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+  
+}
+.sal-usg{
+  background-color: #FF1F00;
+  color:#FFFFFF;
+  border-radius: 10px;
+  padding: 12px 26px;
   font-size: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 10px 60px;
