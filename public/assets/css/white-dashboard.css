@@ -116,6 +116,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  
 }
 
 #pantalla-dividida{
@@ -163,12 +164,22 @@ h6 {
 .top-left{
  
   height: 50%;
-  width: 50%;
+  width: 40%;
   margin-top: 0;
   margin-left:10px;
-  margin-right: 500px;
+  margin-right: 50px;
   
 }
+
+.top-med, .top-med1{
+  height: 50%;
+  width: 50%;
+  margin-top: 50px;
+  margin-left:0px;
+  margin-right: 200px;
+  text-align: center;
+}
+
 .btn-salir{
   background-color: #004578;
   color: #FFFFFF;
@@ -182,11 +193,24 @@ h6 {
   transition: box-shadow 0.2s ease-in-out;
   position:relative;
 }
+.btn-iniciar{
+  background-color: #004578;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1px 50px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 80px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+}
 .top-right{
- 
+  font-size: 20px;
   height: 30%;
-  width: 50%;
-  margin-top: 0;
+  width: 15%;
+  margin-top: 50;
+  margin-left: 0;
 }
 .bottom{
   background: #ffffff;
@@ -196,7 +220,7 @@ h6 {
 }
 
 table,th,td{
-  margin-top:30px;
+  margin-top:10px;
   border: 1px solid black;
   border-collapse: collapse;
 
@@ -216,13 +240,29 @@ td{
   text-align: center;
 }
 
-.portada, .relleno{
-  width:500px;
-  
-  height: 500px;
-  background-color: #004578;
-  background: #ced4da;
+.portada{
+  width:1200px;
+  height: 700px;
+  background-color: #FFFFFF;
+  background: #004578;
+  text-align: center;
 }
+
+.port{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px;
+  color: #FFFFFF;
+  text-align: center;
+ 
+}
+
+.port1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;

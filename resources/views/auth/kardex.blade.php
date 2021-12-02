@@ -1,4 +1,4 @@
-@extends('layouts.app', ['class' => 'login-page', 'page' => 'Menú', 'contentClass' => 'login-page', 'section' => 'auth'])
+@extends('layouts.app', ['class' => 'login-page', 'page' => 'KARDEX', 'contentClass' => 'login-page', 'section' => 'auth'])
 
 
 @section('content')
@@ -9,12 +9,14 @@
                 <div class="top-left">
                     <img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
                 </div>
+                <div class="top-med">
+                    <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
+                </div>
+           
                 <div class="top-right">
                     <button type="button" class="btn-salir">Salir</button>
                 </div>
-           
-       
-       
+
     </div>
 
     <table>
@@ -46,8 +48,8 @@
            <td></td>
            <td></td>
            <td></td>
-           <td></td>
-           <td></td>
+           
+           
         </tr>
         <tr>
             <td>juan4</td>
@@ -64,8 +66,24 @@
             <td></td>
             <td></td>
             <td></td>
+            
+        </tr>
+        <tr>
+            <td>""</td>
+            <td>""</td>
+            <td>""</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
         </tr>
     </table>
     
