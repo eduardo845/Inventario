@@ -4,20 +4,21 @@
 @section('content')
 
    
-    <div id="pantalla-dividida">
-       
-                <div class="top-left">
-                    <img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
-                </div>
-                <div class="top-med">
-                    <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
-                </div>
-           
-                <div class="top-right">
-                    <button type="button" class="btn-salir">Salir</button>
-                </div>
+@section('texto')
 
-    </div>
+  <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
+
+
+@endsection
+@section('img-logo')
+<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
+
+@endsection
+
+@section('salir')
+<button type="button" class="btn-salir">Salir</button>
+
+@endsection
 
     <table>
         <th>Código</th>
@@ -90,3 +91,4 @@
         
    
 @endsection
+

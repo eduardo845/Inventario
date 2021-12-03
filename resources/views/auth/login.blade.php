@@ -1,6 +1,20 @@
 @extends('layouts.app', ['class' => 'login-page', 'page' => 'Unidad de Servicios Generales', 'contentClass' => 'login-page', 'section' => 'auth'])
 
 @section('content')
+
+@section('texto')
+
+@endsection
+
+@section('img-logo')
+
+
+@endsection
+
+@section('salir')
+
+
+@endsection
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
         <form class="form" method="post" action="{{ route('login') }}">
             @csrf

@@ -1,11 +1,25 @@
 @extends('layouts.app', ['class' => 'login-page', 'page' => 'Menú', 'contentClass' => 'login-page', 'section' => 'auth'])
 
 @section('content')
+
+@section('texto')
+ 
    
-    <div id="pantalla-dividida">
+@endsection
+
+@section('img-logo')
+<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
+
+@endsection
+
+@section('salir')
+<button type="button" class="btn-salir">Salir</button>
+
+@endsection
+   
+    <div id="pantalla-div">
         <div class="left">
-            <img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
-            <span class="usg">UNIDAD DE SERVICIOS GENERALES</span>
+            <span class="usg">UNIDAD DE SERVICIOS <br><br>GENERALES</span>
         </div>
         <div class="right">
             <div class="right1">
@@ -24,3 +38,4 @@
         
    
 @endsection
+

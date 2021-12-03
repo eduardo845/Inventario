@@ -8,7 +8,30 @@
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-            <a class="navbar-brand" href="#">{{ $page ?? '' }}</a>
+            <!--<a class="navbar-brand" href="#">{{ $page ?? '' }}</a>-->
+            <div id="pantalla-dividida">
+       
+                <div class="top-left">
+                    <div class="img-logo">
+                        @yield('img-logo')
+                    </div>
+                    
+                </div>
+                <div class="top-med">
+                    <div class="texto">
+                        @yield('texto')
+                    </div>
+            
+                </div>
+            
+                <div class="top-right">
+                    <div class="salir">
+                        @yield('salir')
+                    </div>
+                    
+            </div>
+
+</div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
