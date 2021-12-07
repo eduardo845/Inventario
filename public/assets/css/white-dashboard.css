@@ -180,7 +180,7 @@ h6 {
   height: 20%;
   width: 450px;
   margin-top: 100px;
-  margin-left:0px;
+  margin-left:125px;
   margin-right: 10px;
   text-align: center;
 }
@@ -189,7 +189,7 @@ h6 {
 .btn-salir{
   background-color: #004578;
   color: #FFFFFF;
-  margin-left: 350px;
+  margin-left: 370px;
   border-radius: 10px;
   padding: 8px 45px;
   font-size: 15px;
@@ -216,7 +216,7 @@ h6 {
   height: 30%;
   width: 15%;
   margin-top: 50;
-  margin-left: 0;
+  margin-left: 200px;
 }
 .bottom{
   background: #ffffff;
@@ -303,12 +303,105 @@ img{
   margin-top: 95px;
 
 }
+.nuevo1{
+  text-align: center;
+  margin-top: 10px;
+  display:flex;
+}
+.nuevo1-left{
+  text-align: left;
+ width: 40%;
+margin-left: 300px;
+margin-right: 0;
+
+
+}
+.nuevo1-right{
+  text-align: left;
+  margin-left: 0;
+  width: 60%;
+  margin-right: 50px;
+}
+.btn-nuevo{
+  margin-top: 30px;
+  
+  display: flex;
+}
+.btn-nuevo-cancel{
+  width: 50%;
+  text-align: center;
+  margin-right: 0;
+  margin-left: 800px;
+}
+.btn-nuevo-guardar{
+  width: 50%;
+  text-align: center;
+  margin-left: 0;
+ 
+}
+ .btn-cancelar{
+  background-color: #FF1F00;
+  color: #FFFFFF;
+  
+  border-radius: 10px;
+  padding: 8px 45px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 20px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+  
+  
+ }
+
+ .btn-guardar{
+  background-color: #3BD6C7;
+  color: #FFFFFF;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding: 8px 45px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 20px;
+  cursor:pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  position:relative;
+  
+ 
+ }
+
+.ntop{
+  margin-top: 3px;
+}
+.lista{
+  margin-top: 3px;
+  padding: 3px;
+  width: 178px;
+  
+}
+
 .new-registro{
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #000000;
   font-size: 30px;
   
+}
+
+.letra{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #423f3f;
+  font-size: 15px;
+  
+}
+.letra1{
+ 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #423f3f;
+  font-size: 15px;
+  margin-right: 500px;
 }
 
 .registro, .salida,    .reporte{
