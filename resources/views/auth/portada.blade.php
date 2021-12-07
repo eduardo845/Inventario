@@ -13,7 +13,7 @@
 @endsection
 
 @section('salir')
-<button type="button" class="btn-salir">Salir</button>
+<button type="button" class="btn-salir">Iniciar</button>
 
 @endsection
 
@@ -22,15 +22,14 @@
     <br>
     <br>
     <br>
-    <br>
+   
     <span class="port">CONTROL DE ALMACEN</span><br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
+    
     <span class="port1">Unidad de <br> <br>Servicios Generales</span>
 </div>
     

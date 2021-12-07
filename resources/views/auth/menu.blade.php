@@ -16,12 +16,14 @@
 <button type="button" class="btn-salir">Salir</button>
 
 @endsection
+    
    
     <div id="pantalla-div">
         <div class="left">
-            <span class="usg">UNIDAD DE SERVICIOS <br><br>GENERALES</span>
+            
         </div>
         <div class="right">
+        <span class="usg">UNIDAD DE <br><br> SERVICIOS <br><br>GENERALES</span>
             <div class="right1">
                 <button type="button" class="kardex">KARDEX</button>
                 <button type="button" class="registro">Registro de Datos</button>

@@ -29,6 +29,10 @@ Route::get('kardex',function(){
     return view('auth.kardex');
 });
 
+
+Route::get('nuevo',function(){
+    return view('auth.nuevoRegistro');
+});
 Route::group(['middleware' => 'auth'], function () {
 
     Route::resources([
