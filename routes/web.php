@@ -29,6 +29,10 @@ Route::get('kardex',function(){
     return view('auth.kardex');
 });
 
+Route::get('reporte',function(){
+    return view('auth.reporte');
+});
+
 
 Route::get('nuevo',function(){
     return view('auth.nuevoRegistro');

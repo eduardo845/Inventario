@@ -225,22 +225,73 @@ h6 {
   margin-top: 0;
 }
 
+.cabecera{
+  text-align: center;
+  
+}
+ .cab{
+   margin: 20px 5px;
+   padding: 70.5px 10px;
+ }
+.total{
+  background: #FF1F00 ;
+  width: 5.2%;
+  text-align: center;
+}
+.tamaño{
+  padding: 2px 5px;
+}
+.tamaño1 {
+  padding: 12.5px 5px;
+}
+.tamaño2{
+  padding: 2px 5px;
+}
+.tamaño3{
+  padding: 23px 5px;
+}
+.tamaño4{
+  padding: 33.5px 5px;
+}
+.tamaño5{
+  padding: 44px 5px;
+}
+
+.tabla-master{
+  display: flex;
+  width: 100%;
+  margin-top: 140px;
+
+}
+ .table-left{
+   width: 20%;
+   text-align: center;
+ }
+ .table.right{
+  width: 80%;
+  text-align: center;
+ }
+
 table,th,td{
-  margin-top:10px;
+  text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
-
-  padding: 10px;
+  padding: 2px;
 }
 table{
 width: 100%;
-margin-top: 100px;
+margin-top: 0px;
 }
+.table1{
+  width: 100%;
+  
+  }
 
 th{
   background-color: #004578;
   color: #ffffff;
   text-align: center;
+  margin: 1px 2px;
 }
 td{
   text-align: center;
