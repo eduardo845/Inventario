@@ -4,21 +4,35 @@
 @section('content')
 
    
-@section('texto')
 
-    <H4>Reporte de Gastos mensuales</H4>
-  <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
-
+@section('img-logo')
+<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="" class="img-log">
 
 @endsection
-@section('img-logo')
-<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
+
+@section('menu')
+        <nav class="navegacion">
+            <ul class="menu">
+				<li><a href="#">KARDEX</a></li>
+				<li><a href="#">Registro de Datos</a></li>
+				<li><a href="#">Salidas</a>
+					<ul class="submenu">
+						<li><a href="#">Salidas</a></li>
+						<li><a href="#">Salidas</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Reporte</a></li>
+                <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Inventario</a></li>
+			</ul>
+
+    </nav>
+            
 
 @endsection
 
 @section('salir')
-<button type="button" class="btn-salir">Salir</button>
-
+    <button type="button" class="btn-salir">Salir</button>
 @endsection
 
     <div class="tabla-master">

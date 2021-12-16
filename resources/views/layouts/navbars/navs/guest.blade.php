@@ -17,21 +17,23 @@
                     </div>
                     
                 </div>
-                <div class="top-med">
-                    <div class="texto">
-                        @yield('texto')
-                    </div>
-            
-                </div>
+                
             
                 <div class="top-right">
+                    <div class="menu">
+                        @yield('menu')
+                    </div>
+                    
+                </div>
+
+                <div class="salir1">
                     <div class="salir">
                         @yield('salir')
                     </div>
                     
-            </div>
+                </div>
 
-</div>
+            </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
