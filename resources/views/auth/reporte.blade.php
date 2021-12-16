@@ -13,15 +13,15 @@
 @section('menu')
         <nav class="navegacion">
             <ul class="menu">
-				<li><a href="#">KARDEX</a></li>
-				<li><a href="#">Registro de Datos</a></li>
+				<li><a href="http://localhost:8000/kardex">KARDEX</a></li>
+				<li><a href="http://localhost:8000/nuevo">Registro de Datos</a></li>
 				<li><a href="#">Salidas</a>
 					<ul class="submenu">
-						<li><a href="#">Salidas</a></li>
-						<li><a href="#">Salidas</a></li>
+						<li><a href="#">Salidas Generales</a></li>
+						<li><a href="#">Salidas ESG</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Reporte</a></li>
+				<li><a href="http://localhost:8000/reporte">Reporte</a></li>
                 <li><a href="#">Ajustes</a></li>
                 <li><a href="#">Inventario</a></li>
 			</ul>
@@ -34,6 +34,10 @@
 @section('salir')
     <button type="button" class="btn-salir">Salir</button>
 @endsection
+
+   <div class="top-med1">
+   <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
+   </div>
 
     <div class="tabla-master">
         <div class="table-left">

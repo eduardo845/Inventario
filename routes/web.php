@@ -33,6 +33,10 @@ Route::get('reporte',function(){
     return view('auth.reporte');
 });
 
+Route::get('ajuste',function(){
+    return view('auth.ajuste');
+});
+
 
 Route::get('nuevo',function(){
     return view('auth.nuevoRegistro');

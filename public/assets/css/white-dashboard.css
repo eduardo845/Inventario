@@ -169,28 +169,30 @@ h6 {
 .top-left{
  
   height: 10px;
-  width: 15%;
+  width: 275px;
   margin-top: 0;
   margin-left:0px;
   margin-right:  0px;
-  background: #ffffff;
+  background: #f2f2f2;
 }
 .img-log{
   height: 75px;
+  width: 250px;
+  margin-top: 20px;
 }
 .top-right{
-  font-size: 20px;
+  font-size: 16px;
   height: 30%;
   width: 80%;
-  margin-top: 0px;
+  margin-top: 40px;
   margin-left: 60px;
-  text-align: left;
+  text-align: center;
 }
 .salir1{
   font-size: 10px;
   height: 5%;
   width: 0%;
-  margin-top: 0px;
+  margin-top: 25px;
   margin-right: 70px;
   text-align: left;
 }
@@ -208,7 +210,7 @@ h6 {
 	display: block;
 	padding: 15px 20px;
 	color: #004578;
-	font-family: 'Open sans';
+	font-family:Arial, Helvetica, sans-serif;
 	text-decoration: none;
   text-align: left;
   margin-left: 0;
@@ -226,20 +228,22 @@ h6 {
 
 .submenu{
 	position: absolute;
-	background: #004578;
-	width: 120%;
+	background: #f2f2f2;
+	width: 250px;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s;
-  text-align: center;
+  text-align: left;
 }
 
 .submenu li a{
 	display: block;
-	padding: 5px;
-	color: #ffffff;
-	font-family: 'Open sans';
+	padding: 5px 20px;
+	color: #004578;
+	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
+  text-align: left;
+  margin-left: 0;
 }
 
 .menu li:hover .submenu{
@@ -252,11 +256,10 @@ h6 {
 
 .top-med, .top-med1{
   height: 10%;
-  width: 450px;
+  width: 100%;
   margin-top: 0px;
-  margin-left:125px;
-  margin-right: 10px;
   text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -328,7 +331,7 @@ h6 {
 .tabla-master{
   display: flex;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 15px;
 
 }
  .table-left{
@@ -419,7 +422,7 @@ img{
 
 .nuevo{
   text-align: center;
-  margin-top: 95px;
+  margin-top: 5px;
 
 }
 .nuevo1{
@@ -18254,7 +18257,7 @@ Copyright (c) 2015 Daniel Eden
     border-radius: 0.4285rem;
     padding-bottom: 0.7rem;
     width: 300px;
-    margin-top: 120px;
+    margin-top: 2px;
 }
 
 .login-page .card-login.card-white .card-header .card-title {

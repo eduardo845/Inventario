@@ -8,7 +8,28 @@
 @endsection
 
 @section('img-logo')
-<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="">
+<img src="{{ asset('assets') }}/img/logo-insaforp.png" alt="" class="img-log">
+
+@endsection
+
+@section('menu')
+        <nav class="navegacion">
+            <ul class="menu">
+				<li><a href="http://localhost:8000/kardex">KARDEX</a></li>
+				<li><a href="http://localhost:8000/nuevo">Registro de Datos</a></li>
+				<li><a href="#">Salidas</a>
+					<ul class="submenu">
+						<li><a href="#">Salidas Generales</a></li>
+						<li><a href="#">Salidas ESG</a></li>
+					</ul>
+				</li>
+				<li><a href="http://localhost:8000/reporte">Reporte</a></li>
+                <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Inventario</a></li>
+			</ul>
+
+    </nav>
+            
 
 @endsection
 

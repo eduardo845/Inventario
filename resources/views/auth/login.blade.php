@@ -2,19 +2,7 @@
 
 @section('content')
 
-@section('texto')
 
-@endsection
-
-@section('img-logo')
-
-
-@endsection
-
-@section('salir')
-
-
-@endsection
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
         <form class="form" method="post" action="{{ route('login') }}">
             @csrf
