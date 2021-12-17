@@ -41,10 +41,39 @@ Route::get('salidaUsg',function(){
     return view('auth.salidasUSG');
 });
 
+Route::get('descargas',function(){
+    return view('auth.unidadDescargada');
+});
+
+Route::get('totalProducto',function(){
+    return view('auth.totalProducto');
+});
+
+
+Route::get('inventario',function(){
+    return view('auth.inventario');
+});
+
+Route::get('compras',function(){
+    return view('auth.compras');
+});
 
 Route::get('nuevo',function(){
     return view('auth.nuevoRegistro');
 });
+
+Route::get('solicitudPedido',function(){
+    return view('auth.solicitudPedido');
+});
+
+Route::get('solicitudJefe',function(){
+    return view('auth.solicitudJefe');
+});
+
+Route::get('entradaProductos',function(){
+    return view('auth.entradaProductos');
+});
+
 Route::group(['middleware' => 'auth'], function () {
 
     Route::resources([

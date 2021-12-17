@@ -52,45 +52,35 @@
    
     <div class="nuevo">
         
-       <span class="new-registro">Registro de Nuevo Producto</span><br>
-       <span class="letra">Seleccione la información solicitada para el ingreso de un nuevo producto</span><br><br>
+       <span class="new-registro">Solicitud de Pedido</span><br>
+       <span class="letra">Ingrese la información requerida para procesar su solicitud</span><br><br>
       
         
     </div>
     <div class="nuevo1">
         <div class="nuevo1-left">
-            <span class="letra">Nombre del producto:</span><br>
-            <span class="letra"> Descripción del producto:</span><br>
-            <span class="letra">Código:</span><br>
-            <span class="letra">Específico:</span><br>
-            <span class="letra">Cuenta Contable:</span><br>
-            <span class="letra">Unidad de Medida:</span><br>
-            <span class="letra">Cantidad en Existencia:</span>
+            <span class="letra">Centro de Responsabilidad:</span><br>
+            <span class="letra"> Nombre del Solicitante:</span><br>
+            <span class="letra">Producto a Solicitar:</span><br>
+            <span class="letra">Cantidad:</span><br>
+            <span class="letra">Razón de Solicitud:</span><br>
+           
 
         </div>
         <div class="nuevo1-right">
+        <select name="select" class="lista">
+                <option value="value1"></option>
+                <option value="value2">Value 2</option>
+                <option value="value3">Value 3</option>
+            </select><br>
             <input type="text" class="ntop"><br>
-            <input type="text" class="ntop"><br>
             <select name="select" class="lista">
                 <option value="value1"></option>
                 <option value="value2">Value 2</option>
                 <option value="value3">Value 3</option>
             </select><br>
-            <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-            </select><br>
-            <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-            </select><br>
-            <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2" >Value 2</option>
-                <option value="value3">Value 3</option>
-            </select><br>
+            <input type="number" class="ntop"><br>
+           
             <input type="text" class="ntop">
         </div>
         <br><br>
