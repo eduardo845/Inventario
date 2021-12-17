@@ -13,13 +13,19 @@
             <ul class="menu">
 				<li><a href="http://localhost:8000/kardex">KARDEX</a></li>
 				<li><a href="http://localhost:8000/nuevo">Registro de Datos</a></li>
+                <li><a href="http://localhost:8000/reporte">Reporte</a></li>
 				<li><a href="#">Salidas</a>
 					<ul class="submenu">
-						<li><a href="#">Salidas Generales</a></li>
-						<li><a href="#">Salidas ESG</a></li>
+                    <li><a href="http://localhost:8000/salidaUsg">Salidas USG</a></li>
+						<li><a href="#">Salidas Generales</a>
+                        <ul class="submenu2">
+                                <li><a href="#">Unidades Descargadas</a></li>
+                                <li><a href="#">Total por Unidad</a></li>
+                            </ul></li>
+						
 					</ul>
 				</li>
-				<li><a href="http://localhost:8000/reporte">Reporte</a></li>
+				
                 <li><a href="#">Ajustes</a></li>
                 <li><a href="#">Inventario</a></li>
 			</ul>
@@ -37,6 +43,7 @@
 
     <div class="top-med1">
         <h5>Unidad de Servicios Generales<br> Control de Almacen <br> Mes: Octubre de 2021<br>  Valor: Dolares</h5>
+        <h1>KARDEX</h1>
     </div>
 
     <table>

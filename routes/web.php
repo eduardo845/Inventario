@@ -37,6 +37,10 @@ Route::get('ajuste',function(){
     return view('auth.ajuste');
 });
 
+Route::get('salidaUsg',function(){
+    return view('auth.salidasUSG');
+});
+
 
 Route::get('nuevo',function(){
     return view('auth.nuevoRegistro');
