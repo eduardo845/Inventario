@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KardexController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,9 +26,7 @@ Route::get('portada',function(){
     return view('auth.portada');
 });
 
-Route::get('kardex',function(){
-    return view('auth.kardex');
-});
+Route::get('kardex','KardexController@kardex');
 
 Route::get('reporte',function(){
     return view('auth.reporte');

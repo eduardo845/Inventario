@@ -28,7 +28,7 @@
                         
                         <ul class="submenu2">
                                 <li><a href="http://localhost:8000/descargas">Unidades Descargadas</a></li>
-                                <li><a href="#">Total por Unidad</a></li>
+                                <li><a href="http://localhost:8000/totalProducto">Total por Unidad</a></li>
                             </ul>
                             </li>
                            
@@ -37,7 +37,7 @@
 				</li>
 				
                 <li><a href="http://localhost:8000/ajuste">Ajustes</a></li>
-                <li><a href="#">Inventario</a></li>
+                <li><a href="http://localhost:8000/inventario">Inventario</a></li>
 			</ul>
 
     </nav>

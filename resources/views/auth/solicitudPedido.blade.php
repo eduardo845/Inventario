@@ -68,7 +68,7 @@
 
         </div>
         <div class="nuevo1-right">
-        <select name="select" class="lista">
+            <select name="select" class="lista">
                 <option value="value1"></option>
                 <option value="value2">Value 2</option>
                 <option value="value3">Value 3</option>
@@ -79,9 +79,9 @@
                 <option value="value2">Value 2</option>
                 <option value="value3">Value 3</option>
             </select><br>
+            <input type="text" class="ntop"><br>
             <input type="number" class="ntop"><br>
-           
-            <input type="text" class="ntop">
+            <input type="text" class="ntop"><br>
         </div>
         <br><br>
 

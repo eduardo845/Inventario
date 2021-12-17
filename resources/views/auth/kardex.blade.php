@@ -52,7 +52,7 @@
     </div>
 
     <table>
-        <th>Código</th>
+        <th scope="row">Código</th>
         <th>Específico</th>
         <th>Cuenta Contable</th>
         <th>Familia</th>
@@ -67,21 +67,22 @@
         <th>Saldo Consumo</th>
         <th>Saldo Final</th>
         <tr>
-           <td>juan</td>
-           <td>jua3n</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           
-           
+        @foreach ($kardex as $item)
+           <td>{{$item->codigo}}</td>
+           <td>{{$item->especifico}}</td>
+           <td>{{$item->cuenta_contable}}</td>
+           <td>{{$item->familia}}</td>
+           <td>{{$item->unidad_de_medida}}</td>
+           <td>{{$item->existencia_inicial}}</td>
+           <td>{{$item->compras_cantidad}}</td>
+           <td>{{$item->consumo}}</td>
+           <td>{{$item->existencia_final}}</td>
+           <td>{{$item->costo_unitario}}</td>
+           <td>{{$item->saldo_inicial}}</td>
+           <td>{{$item->compras_saldo}}</td>
+           <td>{{$item->saldo_consumo}}</td>
+           <td>{{$item->saldo_final}}</td>
+          @endforeach 
         </tr>
         <tr>
             <td>juan4</td>

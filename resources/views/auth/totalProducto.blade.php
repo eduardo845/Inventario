@@ -51,7 +51,7 @@
         <h1>Total por Producto</h1>
         <div class="nuevo1">
         <div class="nuevo1-left">
-            <span class="letra">Filtrar por Cuenta Contable:</span><br><br><br>
+            <span class="letra">Filtrar por Cuenta Contable:</span><br>
             
         </div>
         <div class="nuevo1-right">
