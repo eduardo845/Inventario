@@ -77,14 +77,14 @@
                 <option value="value3">Value 3</option>
             </select><br>
             <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
+                @foreach($especifico as $item)
+                <option value="value1">{{$item->numero}}<</option>
+                @endforeach 
             </select><br>
             <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
+                @foreach($nuevo as $item)
+                <option value="value1">{{$item->numero}}</option>
+                @endforeach
             </select><br>
             <select name="select" class="lista">
                 <option value="value1"></option>

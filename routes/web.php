@@ -57,9 +57,7 @@ Route::get('compras',function(){
     return view('auth.compras');
 });
 
-Route::get('nuevo',function(){
-    return view('auth.nuevoRegistro');
-});
+Route::get('nuevo','NuevoController@nuevo');
 
 Route::get('solicitudPedido',function(){
     return view('auth.solicitudPedido');
