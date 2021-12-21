@@ -6,6 +6,11 @@ use Carbon\Carbon;
 use App\SoldProduct;
 use App\Transaction;
 use App\PaymentMethod;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model; 
+use Illuminate\Support\Facades\Hash;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -15,6 +20,8 @@ class HomeController extends Controller
      * @return \Illuminate\View\View
      */
 
+
+    
     public function index()
     {
         $monthlyBalanceByMethod = $this->getMethodBalance()->get('monthlyBalanceByMethod');

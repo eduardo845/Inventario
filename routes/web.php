@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/', 'LoginController@login')->name('home')->middleware('auth');
 
 Route::get('menu',function(){
     return view('auth.menu');
