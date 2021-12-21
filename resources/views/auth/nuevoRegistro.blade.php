@@ -57,7 +57,8 @@
       
         
     </div>
-    <div class="nuevo1">
+    <form method="POST" action="{{url('nuevos')}}">
+        <div class="nuevo1">
         <div class="nuevo1-left">
             <span class="letra">Nombre del producto:</span><br>
             <span class="letra"> Descripción del producto:</span><br>
@@ -72,13 +73,13 @@
             <input type="text" class="ntop"><br>
             <input type="text" class="ntop"><br>
             <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
+            @foreach($nuevo as $item)
+                <option value="value1">{{$item->codigo}}</option>
+               @endforeach
             </select><br>
             <select name="select" class="lista">
-                @foreach($especifico as $item)
-                <option value="value1">{{$item->numero}}<</option>
+                @foreach($nuevo as $item)
+                <option value="value1">{{$item->especifico}}</option>
                 @endforeach 
             </select><br>
             <select name="select" class="lista">
@@ -87,9 +88,9 @@
                 @endforeach
             </select><br>
             <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2" >Value 2</option>
-                <option value="value3">Value 3</option>
+                @foreach($nuevo as $item)
+                <option value="value1">{{$item->unidad_medida}}</option>
+                @endforeach
             </select><br>
             <input type="text" class="ntop">
         </div>
@@ -97,17 +98,19 @@
 
         
       
-    </div>
+        </div>
 
-    <div class="btn-nuevo">
-        <div class="btn-nuevo-cancel">
-             <input type="button" value="Cancelar" class="btn-cancelar">
+        <div class="btn-nuevo">
+            <div class="btn-nuevo-cancel">
+                <input type="button" value="Cancelar" class="btn-cancelar">
+            </div>
+            <div class="btn-nuevo-guardar">
+                <input type="button" value="Guardar" class="btn-guardar">
+            </div>
+            
         </div>
-        <div class="btn-nuevo-guardar">
-             <input type="button" value="Guardar" class="btn-guardar">
-        </div>
-           
-    </div>
+    </form>
+    
        
    
 @endsection

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller\Auth\Request;
-
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -47,31 +47,31 @@ class LoginController extends Controller
         $this->validateLogin($request);
      
             $this->updateLogin($request);
-        
-            if (Auth::attempt(['email' => $request->email,'password' => $request->password,'condicion'=>1])){
+
+            if (Auth::attempt(['email' => $request->email,'password' => $request->password,])){
     
                 return redirect('auth.reporte');
     
             }
         
-            return back()->withErrors(['usuario' => trans('auth.failed')]);
+            return back()->withErrors(['usuario' => trans('auth.reporte')]);
     }
     protected function validateLogin(Request $request){
         $this->validate($request,[
-            'usuario' => 'required|string',
-            'password' => 'required|string'
+            'email' => 'required',
+            'password' => 'required'
         ]);
     }
     
     protected function updateLogin(Request $request){
     
         
-        $usuario = User::find(3);
+        $usuario = User::find(5);
         
-        $usuario->password = Hash::make('password');
+       // $usuario->password = Hash::make('password');
     
         
-        $usuario->save();
+       // $usuario->save();
     }
 }
 
