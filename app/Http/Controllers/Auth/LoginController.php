@@ -44,17 +44,17 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        $this->validateLogin($request);
+            $this->validateLogin($request);
      
             $this->updateLogin($request);
 
             if (Auth::attempt(['email' => $request->email,'password' => $request->password,])){
     
-                return redirect('auth.reporte');
+                return redirect('/kardex');
     
             }
         
-            return back()->withErrors(['usuario' => trans('auth.reporte')]);
+            return back()->withErrors(['password'=>'Datos no validos']);
     }
     protected function validateLogin(Request $request){
         $this->validate($request,[

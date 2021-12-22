@@ -1,7 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Client\Request;
 
@@ -9,15 +10,11 @@ use Illuminate\Http\Client\Request;
 class Nuevo extends Model
 {
     protected $table='cuenta_contable';
-    protected $fillable = ["nombre", "descripcion","codigo","especifico","cuenta","unidad","cantidad"];
 
-    public function store(Request $request)
-    {
-        
+    protected $table2='nuevo_registro';
+    protected $fillable = ['nombre', 'descripcion','codigo','especifico','cuenta_contable','unidad_medida','cantidad_existencia'];
 
-        (new Nuevo($request->input()))->saveOrFail();
-        return redirect()->back()->with(["mensaje" => "Informacion guardada"]);
-    }
+   
 
     
 }

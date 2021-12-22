@@ -70,29 +70,32 @@
 
         </div>
         <div class="nuevo1-right">
-            <input type="text" class="ntop"><br>
-            <input type="text" class="ntop"><br>
-            <select name="select" class="lista">
+            <input type="text" class="ntop" name="nombre"><br>
+            <input type="text" class="ntop" name="descripcion"><br>
+            <select name="select" class="lista" name="codigo">
             @foreach($nuevo as $item)
                 <option value="value1">{{$item->codigo}}</option>
                @endforeach
             </select><br>
-            <select name="select" class="lista">
+            <select name="select" class="lista" name="especifico">
                 @foreach($nuevo as $item)
                 <option value="value1">{{$item->especifico}}</option>
                 @endforeach 
             </select><br>
-            <select name="select" class="lista">
+            <select name="select" class="lista" name="cuenta_contable">
                 @foreach($nuevo as $item)
                 <option value="value1">{{$item->numero}}</option>
                 @endforeach
             </select><br>
-            <select name="select" class="lista">
+            <select name="select" class="lista" name="unidad_medida">
                 @foreach($nuevo as $item)
                 <option value="value1">{{$item->unidad_medida}}</option>
                 @endforeach
             </select><br>
-            <input type="text" class="ntop">
+            <input type="text" class="ntop" name="cantidad_existencia">
+            
+            <input type="button" value="Guardar" class="btn-nuevo-guardar">
+            
         </div>
         <br><br>
 
