@@ -8,7 +8,8 @@ class KardexController extends Controller
 {
     public function kardex(){
         $kardex= App\Kardex::all();
-        return view('auth.kardex', compact('kardex'));
+        $pageSlug="Kardex";
+        return view('auth.kardex', compact('kardex','pageSlug'));
     }
    
 }

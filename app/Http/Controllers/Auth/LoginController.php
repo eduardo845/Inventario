@@ -57,11 +57,11 @@ class LoginController extends Controller
         
             return back()->withErrors(['password'=>'Datos no validos']);
 
-                return redirect('reporte');
+                //return redirect('reporte');
     
-            }
+            
             //return view('auth.login',compact('login '));
-            return back()->withErrors(['usuario' => trans('auth.reporte')]);
+          
 
     }
     protected function validateLogin(Request $request){
