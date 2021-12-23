@@ -6,6 +6,7 @@
 use App\Http\Controllers\Auth\LoginController;
 
 use App\Http\Controllers\KardexController;
+use App\Http\Controllers\NuevoController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\User;
@@ -65,6 +66,7 @@ Route::get('compras',function(){
 });
 
 Route::get('nuevo','NuevoController@nuevo');
+Route::post('nuevo','NuevoController@store');
 
 Route::get('solicitudPedido',function(){
     return view('auth.solicitudPedido');

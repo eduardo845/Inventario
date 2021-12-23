@@ -1,30 +1,68 @@
 <?php
-use Illuminate\Support\Facades\Request;
+
 namespace App\Http\Controllers;
+use Illuminate\Database\Eloquent;
 use App;
-use App\especifico;
+use App\codigo;
+use App\Nuevo;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Nuevo;
-use App\Nuevo as AppNuevo;
+use App\especifico;
+use App\cuenta;
+use App\unidadMedida;
+
 
 class NuevoController extends Controller
 {
     //
+
     public function nuevo(){
-        $nuevo= App\Nuevo::all();
-       /*    Nuevo::create([
-            'nombre'=>Request::input('nombre'),
-            'descripcion'=>Request::input('descripcion'),]);*/
-            return view('auth.nuevoRegistro', compact('nuevo'));
+            $nuevo= Nuevo::all();
+            $especificos= especifico::all();
+            $codigos=codigo::all();
+            $cuentas=cuenta::all();
+            $medidas=unidadMedida::all();
+            $pageSlug="Nuevo";
+            return view('auth.nuevoRegistro', compact('nuevo','pageSlug','especificos','codigos','medidas','cuentas'));
     }
 
-    public function store(Request $request)
-    {
+    public function especifico(){
+        $nuevo=App\Nuevo::all();
+ 
+        $pageSlug="Nuevo";
+        return view('auth.nuevoRegistro', compact('nuevo','pageSlug'));
+}
+
+    public function storeg(Request $request){
+        /*$registro=App\Nuevo::create([
+        'nombre'=>$request['nombre'],
+        'decripcion'=>$request['descripcion'],
+        'codigo'=>$request['codigo'],
+        'especifico'=>$request['especifico'],
+        'cuenta_contable'=>$request['cuenta_contable'],
+        'unidad_medida'=>$request['unidad_medida'],
+        'cantidad_existencia'=>$request['cantidad_existencia'],]);*/
+        $registro = new Nuevo();
+        $registro->nombre = $request['nombre'];
+        $registro->cuenta->associate($request['codigo']);
+        $registro->save();
+        return "Información Guardada 2";
+        //Nuevo::create($request->all());
+    }
+
+    public function storege(Request $request){
+        $this->validate($request,['nombre'=>'required','descripcion'=>'required','cantidad_existencia'=>'required',]);
+
+    }
+
+    public function store(Request $request){
+        Nuevo::create($request->all());
         
-        (new Nuevo($request->input()))->saveOrFail();
-        return redirect()->back()->with(["cantidad_existencia" => "Informacion guardada"]);
+        return "Información Guardada ";
     }
 
     
+    
 
 }
+
+
