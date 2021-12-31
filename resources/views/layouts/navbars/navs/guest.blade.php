@@ -20,7 +20,8 @@
                 
             
                 <div class="top-right">
-                    <div class="menu">
+
+                   <!-- <div class="menu">
                                 <ul class="menu">
                             <li><a href="http://localhost:8000/kardex">KARDEX</a></li>
                             <li><a href="#">Formularios</a>
@@ -45,7 +46,9 @@
                             <li><a href="http://localhost:8000/ajuste">Ajustes</a></li>
                             <li><a href="http://localhost:8000/inventario">Inventario</a></li>
                         </ul>
-                    </div>
+                    </div>-->
+
+                    
                     
                 </div>
 
