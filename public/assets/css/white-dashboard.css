@@ -178,7 +178,7 @@ h6 {
 .img-log{
   height: 75px;
   width: 250px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .top-right{
   font-size: 16px;
@@ -3901,7 +3901,11 @@ input[type="button"].btn-block {
 }
 
 .dropdown-menu {
-  position: relative;
+  position: absolute;
+  width: 250px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
   margin-top: 100%;
   left: 0;
   z-index: 1000;
@@ -3914,11 +3918,27 @@ input[type="button"].btn-block {
   color: #525f7f;
   text-align: left;
   list-style: none;
+  background: #f2f2f2;
   background-color: #ffffff;
   background-clip: padding-box;
   border: 0 solid rgba(34, 42, 66, 0.15);
   border-radius: 0.1428rem;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li a{
+	display: block;
+	padding: 5px 20px;
+	color: #004578;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+  text-align: left;
+  margin-left: 0;
+}
+
+.navbar-nav li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
 }
 
 .dropdown-menu-right {
@@ -4804,6 +4824,10 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  color: #ffffff;
+	transition: all .3s;
+  background: #004578;
+  border-radius: 5px;
 }
 
 .nav-link.disabled {
@@ -4816,6 +4840,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -0.0625rem;
+ 
 }
 
 .nav-tabs .nav-link {
@@ -4924,6 +4949,24 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.navbar-nav > li > a{
+	display: block;
+	padding: 10px 15px;
+	color: #004578;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0px;
+}
+
+.navbar-nav li a:hover{
+	color: #ffffff;
+	transition: all .3s;
+  background: #004578;
+  border-radius: 5px;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
@@ -4941,10 +4984,14 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
+  position: relative;
+  display: inline-block;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  margin-left: 400px;
 }
+
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;

@@ -28,11 +28,11 @@
         <th>Saldo Final</th>
         <tr>
         @foreach ($kardex as $item)
-           <td>{{$item->codigo}}</td>
-           <td>{{$item->especifico}}</td>
-           <td>{{$item->cuenta_contable}}</td>
+           <td>{{$item->codigo_id}}</td>
+           <td>{{$item->especifico_id}}</td>
+           <td>{{$item->cuenta_contable_id}}</td>
            <td>{{$item->familia}}</td>
-           <td>{{$item->unidad_de_medida}}</td>
+           <td>{{$item->unidad_de_medida_id}}</td>
            <td>{{$item->existencia_inicial}}</td>
            <td>{{$item->compras_cantidad}}</td>
            <td>{{$item->consumo}}</td>
