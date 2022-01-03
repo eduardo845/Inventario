@@ -31,17 +31,17 @@
                     <option value="{{$item->id}}">{{$item->numero}}</option>
                 @endforeach
                 </select><br>
-                <select name="select" class="lista" name="especifico">
+                <select class="lista" name="especifico">
                     @foreach($especificos as $item)
                     <option value="{{$item->id}}">{{$item->numero}}</option>
                     @endforeach 
                 </select><br>
-                <select name="select" class="lista" name="cuenta_contable">
+                <select class="lista" name="cuenta_contable">
                     @foreach($cuentas as $item)
                     <option value="value1">{{$item->numero}}</option>
                     @endforeach
                 </select><br>
-                <select name="select" class="lista" name="unidad_medida">
+                <select class="lista" name="unidad_medida">
                     @foreach($medidas as $item)
                     <option value="value1">{{$item->nombre}}</option>
                     @endforeach

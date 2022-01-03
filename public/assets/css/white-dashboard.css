@@ -288,7 +288,7 @@ h6 {
 .top-med, .top-med1{
   height: 10%;
   width: 100%;
-  margin-top: 0px;
+  margin-top: -80px;
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -453,7 +453,7 @@ img{
 
 .nuevo{
   text-align: center;
-  margin-top: 5px;
+  margin-top: -80px;
 
 }
 .nuevo1{
@@ -4061,7 +4061,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #004578;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -4989,7 +4989,7 @@ input[type="button"].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 
@@ -18335,7 +18335,8 @@ Copyright (c) 2015 Daniel Eden
     border-radius: 0.4285rem;
     padding-bottom: 0.7rem;
     width: 300px;
-    margin-top: 2px;
+    margin-top: -85
+    px;
 }
 
 .login-page .card-login.card-white .card-header .card-title {
