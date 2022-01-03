@@ -45,7 +45,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function login(Request $request){
+    public function login(Redirector $redirect, Request $request){
             $this->validateLogin($request);
      
             $this->updateLogin($request);
@@ -53,7 +53,7 @@ class LoginController extends Controller
             if (Auth::attempt(['email' => $request->email,'password' => $request->password,])){
     
 
-                return redirect('/kardex');
+                return $redirect->to('/kardex');
     
             }
         

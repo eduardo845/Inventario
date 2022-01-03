@@ -18,11 +18,11 @@
             
         </div>
         <div class="nuevo1-right">
-        <select name="select" class="lista">
-                <option value="value1"></option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-            </select><br><br><br>
+        <select class="lista" name="cuenta_contable">
+            
+             <option value="value1"></option>
+             
+        </select><br><br><br>
            
         </div>
         <br><br>

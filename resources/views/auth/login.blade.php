@@ -1,4 +1,4 @@
-@extends('layouts.app', [ 'page' => 'Unidad de Servicios Generales', 'contentClass' => 'login-page'])
+@extends('layouts.appLogin', [ 'page' => 'Unidad de Servicios Generales', 'contentClass' => 'login-page'])
 
 @section('content')
 

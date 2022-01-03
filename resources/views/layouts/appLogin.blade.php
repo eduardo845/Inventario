@@ -24,9 +24,7 @@
     </head>
     <body class="white-content {{ $class ?? '' }}">
         @auth()
-            
-                
-                <div class="main-panel">
+        <div class="main-panel">
                     @include('layouts.navbars.navbar')
 
                     <div class="content">
@@ -39,7 +37,7 @@
                 @csrf
             </form>
         @else
-            @include('layouts.navbars.navbar')
+           
             <div class="wrapper wrapper-full-page">
                 <div class="full-page {{ $contentClass ?? '' }}">
                     <div class="content">

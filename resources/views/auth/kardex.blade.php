@@ -1,4 +1,4 @@
-@extends('layouts.app', [ 'class' => 'login-page', 'page' => 'Menú', 'contentClass' => 'login-page', 'section' => 'auth'])
+@extends('layouts.app', [ 'class' => 'login-page', 'page' => 'Kardex', 'contentClass' => 'login-page', 'section' => 'auth'])
 
 
 
